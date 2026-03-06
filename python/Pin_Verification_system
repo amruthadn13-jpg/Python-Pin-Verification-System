@@ -1,0 +1,17 @@
+def check_pin():
+    correct_pin="1234"
+    attempts=0
+    while attempts<3:
+        pin=input("Enter the Pin: \n")
+        if pin==correct_pin:
+            print("Access Granted! ")
+            break
+        else:
+            attempts += 1
+            print("Wrong Pin..Try Again ")
+    if attempts==3:
+        print("Access Denied! ")
+check_pin()
+
+
+
